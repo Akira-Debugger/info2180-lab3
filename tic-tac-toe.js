@@ -8,6 +8,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const who_won =[];
     let player_choice ='O';
     list_div.forEach(square =>{
+            square.addEventListener('mouseover',MouseOver );
+            square.addEventListener('mouseout',MouseOut);
+
+          function MouseOver(){
+                square.classList.add('hover');
+
+            }
+
+             function MouseOut(){
+                square.classList.remove('hover');
+
+            }
+
             square.addEventListener('click',function(){
                if (player_choice=='O') {
                 square.classList.add('O');
@@ -20,10 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
                }
 
             });
-
-
-
          });
+      
+
 
 
 

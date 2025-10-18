@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
    let list_div = document.querySelectorAll("#board div");
-   const status = document.getElementById('status');
+   let status = document.getElementById('status');
    let new_game=document.querySelector('.btn');
     for (var i = 0; i < list_div.length; i++) {
          list_div[i].classList.add('square');

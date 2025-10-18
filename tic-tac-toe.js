@@ -1,4 +1,3 @@
-//My tic-tac-toe jss 
 document.addEventListener("DOMContentLoaded", function() {
    let list_div = document.querySelectorAll("#board div");
    const status = document.getElementById('status');

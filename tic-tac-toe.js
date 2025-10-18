@@ -23,12 +23,13 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             
             square.addEventListener('click',function(){
+               if (square.textContent !== '') return;
                if (player_choice=='O') {
                 square.classList.add('O');
                 square.textContent = 'O';
                 who_won[index]=player_choice;
                 player_choice='X';
-               } else {
+               } else if(player_choice=='X') {
                   square.classList.add('X');
                   square.textContent = 'X';
                   who_won[index]=player_choice;
